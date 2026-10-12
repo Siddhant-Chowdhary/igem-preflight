@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="880" height="560" font-family="Helvetica, Arial, sans-serif">
+  <rect width="880" height="560" fill="#fcfcfb"/>
+  <text x="44" y="38" font-size="18" font-weight="700" fill="#0b0b0b">The model makes C14:0 the opposite way from how we plan to</text>
+  <text x="44" y="58" font-size="12.5" fill="#52514e">Flux at the C14:0 optimum, 50% of wild-type growth. Every step on the top route carries identical flux (0.1192 mmol/gDW/h),</text>
+  <text x="44" y="75" font-size="12.5" fill="#52514e">which is what identifies it as a single unbranched path.</text>
+
+  <!-- ROUTE A: what the model does -->
+  <rect x="44" y="96" width="792" height="176" rx="8" fill="#eef4f9" stroke="#2a78d6" stroke-width="1.6"/>
+  <text x="64" y="122" font-size="13.5" font-weight="700" fill="#1a5ba8">WHAT THE MODEL ACTUALLY DOES &#8212; beta-oxidative chain shortening</text>
+  <text x="64" y="141" font-size="11.5" fill="#52514e">It takes an existing C16:0 and removes one two-carbon unit. Not de novo synthesis.</text>
+
+  <g font-size="11.5">
+    <rect x="64" y="158" width="92" height="40" rx="5" fill="#fcfcfb" stroke="#7d9ab5" stroke-width="1.2"/>
+    <text x="110" y="176" text-anchor="middle" font-size="12.5" font-weight="600" fill="#0b0b0b">C16:0</text>
+    <text x="110" y="191" text-anchor="middle" font-size="10.5" fill="#52514e">palmitate</text>
+
+    <path d="M158 178 L186 178" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar)"/>
+    <text x="172" y="170" text-anchor="middle" font-size="9.5" fill="#52514e">r_0402</text>
+
+    <rect x="188" y="158" width="112" height="40" rx="5" fill="#fcfcfb" stroke="#7d9ab5" stroke-width="1.2"/>
+    <text x="244" y="182" text-anchor="middle" font-size="12" fill="#0b0b0b">hexadecanoyl-CoA</text>
+
+    <path d="M302 178 L334 178" stroke="#2a78d6" stroke-width="2.4" marker-end="url(#arb)"/>
+
+    <rect x="336" y="152" width="136" height="52" rx="5" fill="#2a78d6" stroke="#1a5ba8" stroke-width="1.6"/>
+    <text x="404" y="172" text-anchor="middle" font-size="12.5" font-weight="700" fill="#ffffff">POX1</text>
+    <text x="404" y="188" text-anchor="middle" font-size="10.5" fill="#dce9f7">acyl-CoA oxidase</text>
+    <text x="404" y="200" text-anchor="middle" font-size="9.5" fill="#dce9f7">r_0123 &#183; committed step</text>
+
+    <path d="M474 178 L506 178" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar)"/>
+    <text x="490" y="170" text-anchor="middle" font-size="9.5" fill="#52514e">r_2251</text>
+
+    <rect x="508" y="158" width="104" height="40" rx="5" fill="#fcfcfb" stroke="#7d9ab5" stroke-width="1.2"/>
+    <text x="560" y="176" text-anchor="middle" font-size="12" fill="#0b0b0b">myristoyl-CoA</text>
+    <text x="560" y="190" text-anchor="middle" font-size="10.5" fill="#52514e">r_0102</text>
+
+    <path d="M614 178 L646 178" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar)"/>
+    <text x="630" y="170" text-anchor="middle" font-size="9.5" fill="#52514e">r_0412</text>
+
+    <rect x="648" y="158" width="168" height="40" rx="5" fill="#dce9f7" stroke="#2a78d6" stroke-width="1.6"/>
+    <text x="732" y="176" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1a5ba8">C14:0 exported</text>
+    <text x="732" y="191" text-anchor="middle" font-size="10.5" fill="#1a5ba8">0.1192 mmol/gDW/h</text>
+  </g>
+  <rect x="64" y="216" width="752" height="42" rx="5" fill="#fcfcfb" stroke="#c0564a" stroke-width="1.4"/>
+  <text x="78" y="234" font-size="12" font-weight="700" fill="#8f2a1e">Delete POX1 and C14:0 production goes to exactly zero</text>
+  <text x="78" y="250" font-size="11.5" fill="#52514e">&#8212; because this is the only C14:0 route the model has. Our plan was to knock down degradation to preserve C14:0.</text>
+
+  <!-- ROUTE B: what we intend -->
+  <rect x="44" y="292" width="792" height="150" rx="8" fill="#f7f4ef" stroke="#b8a888" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="64" y="318" font-size="13.5" font-weight="700" fill="#7a6435">WHAT OUR WET LAB IS ACTUALLY BUILDING &#8212; early chain release</text>
+  <text x="64" y="337" font-size="11.5" fill="#52514e">FAS2 V1254W makes fatty-acid synthase release the chain at C14 instead of extending it to C16.</text>
+
+  <g font-size="11.5">
+    <rect x="64" y="354" width="104" height="40" rx="5" fill="#fcfcfb" stroke="#b8a888" stroke-width="1.2"/>
+    <text x="116" y="372" text-anchor="middle" font-size="12" fill="#0b0b0b">acetyl-CoA</text>
+    <text x="116" y="386" text-anchor="middle" font-size="10.5" fill="#52514e">+ malonyl-CoA</text>
+
+    <path d="M170 374 L202 374" stroke="#52514e" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <rect x="204" y="348" width="150" height="52" rx="5" fill="#fcfcfb" stroke="#b8a888" stroke-width="1.4"/>
+    <text x="279" y="368" text-anchor="middle" font-size="12.5" font-weight="600" fill="#0b0b0b">FAS (FAS2 V1254W)</text>
+    <text x="279" y="384" text-anchor="middle" font-size="10.5" fill="#52514e">elongation, C4 &#8594; C14</text>
+    <text x="279" y="396" text-anchor="middle" font-size="9.5" fill="#52514e">mutation blocks further extension</text>
+
+    <path d="M356 374 L396 374" stroke="#c0564a" stroke-width="2.2" stroke-dasharray="5 3" marker-end="url(#arr)"/>
+    <text x="376" y="366" text-anchor="middle" font-size="9.5" font-weight="600" fill="#8f2a1e">?</text>
+
+    <rect x="398" y="354" width="188" height="40" rx="5" fill="#fdf0ee" stroke="#c0564a" stroke-width="1.8"/>
+    <text x="492" y="371" text-anchor="middle" font-size="12" font-weight="700" fill="#8f2a1e">early C14 release reaction</text>
+    <text x="492" y="386" text-anchor="middle" font-size="11" font-weight="700" fill="#8f2a1e">ABSENT FROM YEAST9</text>
+
+    <path d="M588 374 L620 374" stroke="#b0b0aa" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arg)"/>
+
+    <rect x="622" y="354" width="194" height="40" rx="5" fill="#f2f2ef" stroke="#b0b0aa" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <text x="719" y="371" text-anchor="middle" font-size="12" fill="#6a6a64">C14:0 exported</text>
+    <text x="719" y="386" text-anchor="middle" font-size="10.5" fill="#6a6a64">cannot be simulated</text>
+  </g>
+  <text x="64" y="424" font-size="11.5" fill="#52514e">This is why our mutation table's reaction IDs do not exist in Yeast9: the reaction itself is missing, not the lookup.</text>
+
+  <rect x="44" y="462" width="792" height="62" rx="6" fill="#f7f7f5" stroke="#d6d6d2" stroke-width="1.2"/>
+  <text x="60" y="483" font-size="12" font-weight="700" fill="#0b0b0b">Consequence</text>
+  <text x="60" y="501" font-size="11.5" fill="#3d3d3d">Until a FAS early-release reaction is added to the model, no knockout search over it is meaningful for this project &#8212; it asks</text>
+  <text x="60" y="517" font-size="11.5" fill="#3d3d3d">which knockouts shift a profile the cell can already produce unaided, by a route we do not intend to use.</text>
+
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#52514e"/></marker>
+    <marker id="arb" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#2a78d6"/></marker>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#c0564a"/></marker>
+    <marker id="arg" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#b0b0aa"/></marker>
+  </defs>
+</svg>

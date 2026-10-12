@@ -1,0 +1,257 @@
+{
+ "wt_growth": 0.08110025381639172,
+ "frontiers": {
+  "(none)": [
+   {
+    "growth_frac": 0.01,
+    "feasible": true,
+    "c14": 0.2306917470419255,
+    "total": 0.2306917470419255,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.1,
+    "feasible": true,
+    "c14": 0.21079641477204442,
+    "total": 0.21079641477204442,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.25,
+    "feasible": true,
+    "c14": 0.1776375276555722,
+    "total": 0.1776375276555722,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.5,
+    "feasible": true,
+    "c14": 0.11919146778504476,
+    "total": 0.11919146778504476,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.75,
+    "feasible": true,
+    "c14": 0.059595733892521555,
+    "total": 0.059595733892521555,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.9,
+    "feasible": true,
+    "c14": 0.023838293557005723,
+    "total": 0.023838293557005723,
+    "share": 1.0
+   }
+  ],
+  "FAA1": [
+   {
+    "growth_frac": 0.01,
+    "feasible": true,
+    "c14": 0.2306917470419256,
+    "total": 0.2306917470419256,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.1,
+    "feasible": true,
+    "c14": 0.21079641477204344,
+    "total": 0.21079641477204344,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.25,
+    "feasible": true,
+    "c14": 0.177637527655573,
+    "total": 0.177637527655573,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.5,
+    "feasible": true,
+    "c14": 0.11919146778504193,
+    "total": 0.11919146778504193,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.75,
+    "feasible": true,
+    "c14": 0.05959573389252066,
+    "total": 0.05959573389252066,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.9,
+    "feasible": true,
+    "c14": 0.023838293557009886,
+    "total": 0.023838293557009886,
+    "share": 1.0
+   }
+  ],
+  "FAA1 FAA4": [
+   {
+    "growth_frac": 0.01,
+    "feasible": true,
+    "c14": 0.22677789576743618,
+    "total": 0.22677789576743618,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.1,
+    "feasible": true,
+    "c14": 0.20721937190083647,
+    "total": 0.20721937190083647,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.25,
+    "feasible": true,
+    "c14": 0.1744579040894133,
+    "total": 0.1744579040894133,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.5,
+    "feasible": true,
+    "c14": 0.11667949320085214,
+    "total": 0.11667949320085214,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.75,
+    "feasible": true,
+    "c14": 0.058334764919275986,
+    "total": 0.058334764919275986,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.9,
+    "feasible": true,
+    "c14": 0.023327927950328304,
+    "total": 0.023327927950328304,
+    "share": 1.0
+   }
+  ],
+  "DGA1 FAA1 LRO1": [
+   {
+    "growth_frac": 0.01,
+    "feasible": true,
+    "c14": 0.23069174704192408,
+    "total": 0.23069174704192408,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.1,
+    "feasible": true,
+    "c14": 0.21079641477204522,
+    "total": 0.21079641477204522,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.25,
+    "feasible": true,
+    "c14": 0.1776375276555728,
+    "total": 0.1776375276555728,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.5,
+    "feasible": true,
+    "c14": 0.11919146778504439,
+    "total": 0.11919146778504439,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.75,
+    "feasible": true,
+    "c14": 0.059595733892522346,
+    "total": 0.059595733892522346,
+    "share": 1.0
+   },
+   {
+    "growth_frac": 0.9,
+    "feasible": true,
+    "c14": 0.02383829355700818,
+    "total": 0.02383829355700818,
+    "share": 1.0
+   }
+  ],
+  "POX1 FAA1": [
+   {
+    "growth_frac": 0.01,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.1,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.25,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.5,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.75,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.9,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   }
+  ],
+  "POX1 PXA1 FAA1": [
+   {
+    "growth_frac": 0.01,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.1,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.25,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.5,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.75,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   },
+   {
+    "growth_frac": 0.9,
+    "feasible": true,
+    "c14": 0.0,
+    "share": 0.0
+   }
+  ]
+ }
+}

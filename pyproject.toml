@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "preflight"
+version = "1.0.0"
+description = "Checks whether a metabolic model's scoring function is measuring anything, before anyone acts on it."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["flux balance analysis", "metabolic engineering", "strain design",
+            "cobrapy", "systems biology", "igem"]
+
+dependencies = [
+    "cobra>=0.29",
+    "numpy>=1.24",
+    "PyYAML>=6.0",
+]
+
+# Add the repository URL here once it exists:
+# [project.urls]
+# Repository = "https://github.com/<org-or-user>/<repo>"
+
+[tool.setuptools.packages.find]
+include = ["preflight*"]

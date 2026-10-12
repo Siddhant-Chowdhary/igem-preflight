@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="880" height="500" fill="#fcfcfb"/>
+  <text x="60" y="38" font-size="18" font-weight="700" fill="#0b0b0b">No knockout improves on wild-type C14:0 production</text>
+  <text x="60" y="58" font-size="12.5" fill="#52514e">Maximum C14:0 export against a growth floor, Yeast9. Purity is 100% C14:0 at every point on the upper curve.</text>
+
+  <!-- gridlines -->
+  <g stroke="#e4e3df" stroke-width="1">
+    <line x1="90" y1="70"  x2="780" y2="70"/>
+    <line x1="90" y1="136" x2="780" y2="136"/>
+    <line x1="90" y1="202" x2="780" y2="202"/>
+    <line x1="90" y1="268" x2="780" y2="268"/>
+    <line x1="90" y1="334" x2="780" y2="334"/>
+  </g>
+  <line x1="90" y1="400" x2="780" y2="400" stroke="#9a9a94" stroke-width="1.5"/>
+  <line x1="90" y1="70" x2="90" y2="400" stroke="#9a9a94" stroke-width="1.5"/>
+
+  <!-- y labels -->
+  <g font-size="11.5" fill="#52514e" text-anchor="end">
+    <text x="80" y="74">0.25</text><text x="80" y="140">0.20</text>
+    <text x="80" y="206">0.15</text><text x="80" y="272">0.10</text>
+    <text x="80" y="338">0.05</text><text x="80" y="404">0</text>
+  </g>
+  <text x="30" y="240" font-size="12" fill="#52514e" text-anchor="middle" transform="rotate(-90 30 240)">C14:0 export (mmol/gDW/h)</text>
+
+  <!-- x labels -->
+  <g font-size="11.5" fill="#52514e" text-anchor="middle">
+    <text x="159" y="421">10%</text><text x="262" y="421">25%</text>
+    <text x="435" y="421">50%</text><text x="607" y="421">75%</text><text x="711" y="421">90%</text>
+  </g>
+  <text x="435" y="444" font-size="12" fill="#52514e" text-anchor="middle">Growth held at (% of wild-type growth rate)</text>
+
+  <!-- POX1 zero line (violet) -->
+  <line x1="159" y1="400" x2="711" y2="400" stroke="#6250d6" stroke-width="2.5"/>
+  <g fill="#6250d6" stroke="#fcfcfb" stroke-width="2">
+    <circle cx="159" cy="400" r="4.5"/><circle cx="262" cy="400" r="4.5"/><circle cx="435" cy="400" r="4.5"/>
+    <circle cx="607" cy="400" r="4.5"/><circle cx="711" cy="400" r="4.5"/>
+  </g>
+
+  <!-- FAA1+FAA4 (orange) -->
+  <polyline points="159,126.5 262,169.7 435,246 607,323 711,369.2" fill="none" stroke="#eb6834" stroke-width="2"/>
+  <g fill="#eb6834" stroke="#fcfcfb" stroke-width="2">
+    <circle cx="159" cy="126.5" r="4.5"/><circle cx="262" cy="169.7" r="4.5"/><circle cx="435" cy="246" r="4.5"/>
+    <circle cx="607" cy="323" r="4.5"/><circle cx="711" cy="369.2" r="4.5"/>
+  </g>
+
+  <!-- frontier (blue) -->
+  <polyline points="159,121.5 262,165 435,242.9 607,320.8 711,368.3" fill="none" stroke="#2a78d6" stroke-width="2.5"/>
+  <g fill="#2a78d6" stroke="#fcfcfb" stroke-width="2">
+    <circle cx="159" cy="121.5" r="4.5"/><circle cx="262" cy="165" r="4.5"/><circle cx="435" cy="242.9" r="4.5"/>
+    <circle cx="607" cy="320.8" r="4.5"/><circle cx="711" cy="368.3" r="4.5"/>
+  </g>
+
+  <!-- direct labels -->
+  <text x="172" y="108" font-size="12" font-weight="600" fill="#2a78d6">no edit &#183; FAA1 &#183; DGA1+FAA1+LRO1</text>
+  <text x="172" y="123" font-size="11" fill="#52514e">all three identical &#8212; 0.211 at 10% growth</text>
+  <line x1="740" y1="369" x2="786" y2="352" stroke="#eb6834" stroke-width="1.2"/>
+  <text x="790" y="349" font-size="11.5" font-weight="600" fill="#eb6834">FAA1+FAA4</text>
+  <text x="790" y="363" font-size="10.5" fill="#52514e">2% below</text>
+  <line x1="740" y1="400" x2="786" y2="400" stroke="#6250d6" stroke-width="1.2"/>
+  <text x="790" y="396" font-size="11.5" font-weight="600" fill="#6250d6">POX1 sets</text>
+  <text x="790" y="410" font-size="10.5" fill="#52514e">exactly zero</text>
+
+  <!-- legend -->
+  <g font-size="11.5" fill="#52514e">
+    <rect x="90" y="458" width="12" height="3" fill="#2a78d6"/>
+    <text x="110" y="463">wild type and two knockout sets (identical)</text>
+    <rect x="366" y="458" width="12" height="3" fill="#eb6834"/>
+    <text x="386" y="463">FAA1 + FAA4</text>
+    <rect x="490" y="458" width="12" height="3" fill="#6250d6"/>
+    <text x="510" y="463">POX1 + FAA1 and POX1 + PXA1 + FAA1</text>
+  </g>
+  <text x="60" y="487" font-size="11" fill="#52514e">FBA gives an upper limit on what is possible, not a prediction or a probability. Not validated against wet-lab data.</text>
+</svg>

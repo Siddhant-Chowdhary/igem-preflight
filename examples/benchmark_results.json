@@ -1,0 +1,256 @@
+[
+ {
+  "n_genes": 10,
+  "max_order": 3,
+  "strategy": "exhaustive",
+  "best_score": 0.7606940473232985,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 175,
+  "seconds": 0.003462076187133789,
+  "combo": [
+   "G00"
+  ]
+ },
+ {
+  "n_genes": 10,
+  "max_order": 3,
+  "strategy": "greedy",
+  "best_score": 0.7606940473232985,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 20,
+  "seconds": 0.0003414154052734375,
+  "combo": [
+   "G00"
+  ]
+ },
+ {
+  "n_genes": 10,
+  "max_order": 3,
+  "strategy": "rl",
+  "best_score": 0.7606940473232985,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 1204,
+  "seconds": 0.12535667419433594,
+  "combo": [
+   "G00",
+   "G04",
+   "G01"
+  ]
+ },
+ {
+  "n_genes": 10,
+  "max_order": 3,
+  "strategy": "random_matched",
+  "best_score": 0.7606940473232985,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 169,
+  "seconds": 0.006193399429321289,
+  "combo": [
+   "G00"
+  ]
+ },
+ {
+  "n_genes": 20,
+  "max_order": 3,
+  "strategy": "exhaustive",
+  "best_score": 0.9716055700223482,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 1350,
+  "seconds": 0.024245500564575195,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 20,
+  "max_order": 3,
+  "strategy": "greedy",
+  "best_score": 0.9716055700223482,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 40,
+  "seconds": 0.0006773471832275391,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 20,
+  "max_order": 3,
+  "strategy": "rl",
+  "best_score": 0.7967764877406339,
+  "frac_of_exhaustive": 0.820061671447918,
+  "n_evals": 1204,
+  "seconds": 0.2763707637786865,
+  "combo": [
+   "G16",
+   "G06",
+   "G01"
+  ]
+ },
+ {
+  "n_genes": 20,
+  "max_order": 3,
+  "strategy": "random_matched",
+  "best_score": 0.9716055700223482,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 530,
+  "seconds": 0.013504743576049805,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 30,
+  "max_order": 3,
+  "strategy": "exhaustive",
+  "best_score": 0.9727938185843292,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 4525,
+  "seconds": 0.15027832984924316,
+  "combo": [
+   "G02",
+   "G28"
+  ]
+ },
+ {
+  "n_genes": 30,
+  "max_order": 3,
+  "strategy": "greedy",
+  "best_score": 0.9684091191163646,
+  "frac_of_exhaustive": 0.9954926733864885,
+  "n_evals": 60,
+  "seconds": 0.001100778579711914,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 30,
+  "max_order": 3,
+  "strategy": "rl",
+  "best_score": 0.5877002493973232,
+  "frac_of_exhaustive": 0.6041364965215154,
+  "n_evals": 1204,
+  "seconds": 0.47475171089172363,
+  "combo": [
+   "G08",
+   "G29",
+   "G04"
+  ]
+ },
+ {
+  "n_genes": 30,
+  "max_order": 3,
+  "strategy": "random_matched",
+  "best_score": 0.9684091191163646,
+  "frac_of_exhaustive": 0.9954926733864885,
+  "n_evals": 661,
+  "seconds": 0.017650127410888672,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 40,
+  "max_order": 3,
+  "strategy": "exhaustive",
+  "best_score": 0.9887282235783456,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 10700,
+  "seconds": 0.23493003845214844,
+  "combo": [
+   "G15",
+   "G20"
+  ]
+ },
+ {
+  "n_genes": 40,
+  "max_order": 3,
+  "strategy": "greedy",
+  "best_score": 0.9887282235783456,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 118,
+  "seconds": 0.0018134117126464844,
+  "combo": [
+   "G15",
+   "G20"
+  ]
+ },
+ {
+  "n_genes": 40,
+  "max_order": 3,
+  "strategy": "rl",
+  "best_score": 0.5425981360283108,
+  "frac_of_exhaustive": 0.548783905515079,
+  "n_evals": 1204,
+  "seconds": 0.5043513774871826,
+  "combo": [
+   "G33",
+   "G29",
+   "G01"
+  ]
+ },
+ {
+  "n_genes": 40,
+  "max_order": 3,
+  "strategy": "random_matched",
+  "best_score": 0.9856896418155265,
+  "frac_of_exhaustive": 0.996926777560954,
+  "n_evals": 753,
+  "seconds": 0.013907670974731445,
+  "combo": [
+   "G15",
+   "G28"
+  ]
+ },
+ {
+  "n_genes": 50,
+  "max_order": 3,
+  "strategy": "exhaustive",
+  "best_score": 0.9900680010242161,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 20875,
+  "seconds": 0.478607177734375,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 50,
+  "max_order": 3,
+  "strategy": "greedy",
+  "best_score": 0.9900680010242161,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 100,
+  "seconds": 0.0021660327911376953,
+  "combo": [
+   "G15"
+  ]
+ },
+ {
+  "n_genes": 50,
+  "max_order": 3,
+  "strategy": "rl",
+  "best_score": 0.8365909269467494,
+  "frac_of_exhaustive": 0.8449833002190799,
+  "n_evals": 1204,
+  "seconds": 0.8194730281829834,
+  "combo": [
+   "G16",
+   "G08",
+   "G23"
+  ]
+ },
+ {
+  "n_genes": 50,
+  "max_order": 3,
+  "strategy": "random_matched",
+  "best_score": 0.9900680010242161,
+  "frac_of_exhaustive": 1.0,
+  "n_evals": 798,
+  "seconds": 0.021962642669677734,
+  "combo": [
+   "G15"
+  ]
+ }
+]

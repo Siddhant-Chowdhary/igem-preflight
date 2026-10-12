@@ -1,0 +1,11 @@
+# Three packages, that's it. See INSTALL.md for the full setup.
+# A linear-programming solver (GLPK) comes with cobra, so there is nothing
+# else to install and no licence to obtain.
+cobra>=0.29
+numpy>=1.24
+PyYAML>=6.0
+
+# Optional:
+#   pytest   nicer test output; the tests also run without it
+#   pandas   only the notebook uses it
+#   jupyter  only if you run the notebook locally instead of in Colab

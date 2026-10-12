@@ -1,0 +1,31 @@
+genes strategy            score  % of exact     evals  projected FBA time
+--------------------------------------------------------------------------
+   10 exhaustive         0.7607      100.0%       175                 52s
+   10 greedy             0.7607      100.0%        20                  6s
+   10 rl                 0.7607      100.0%     1,204                6min
+   10 random_matched     0.7607      100.0%       169                 51s
+   20 exhaustive         0.9716      100.0%     1,350                7min
+   20 greedy             0.9716      100.0%        40                 12s
+   20 rl                 0.7968       82.0%     1,204                6min
+   20 random_matched     0.9716      100.0%       530                3min
+   30 exhaustive         0.9728      100.0%     4,525               23min
+   30 greedy             0.9684       99.5%        60                 18s
+   30 rl                 0.5877       60.4%     1,204                6min
+   30 random_matched     0.9684       99.5%       661                3min
+   40 exhaustive         0.9887      100.0%    10,700               54min
+   40 greedy             0.9887      100.0%       118                 35s
+   40 rl                 0.5426       54.9%     1,204                6min
+   40 random_matched     0.9857       99.7%       753                4min
+   50 exhaustive         0.9901      100.0%    20,875                1.7h
+   50 greedy             0.9901      100.0%       100                 30s
+   50 rl                 0.8366       84.5%     1,204                6min
+   50 random_matched     0.9901      100.0%       798                4min
+--------------------------------------------------------------------------
+projected time = evals x 0.3s, this project's measured Yeast9 evaluator cost
+
+Enumeration stayed within the 8-hour budget at every size tested, so a learned search is not needed in this range.
+n= 10: exhaustive needs 175 evaluations (0.0 h on a real GEM); RL used 1,204 (0.1 h) and reached 100.0% of the exact optimum
+n= 20: exhaustive needs 1,350 evaluations (0.1 h on a real GEM); RL used 1,204 (0.1 h) and reached 82.0% of the exact optimum
+n= 30: exhaustive needs 4,525 evaluations (0.4 h on a real GEM); RL used 1,204 (0.1 h) and reached 60.4% of the exact optimum
+n= 40: exhaustive needs 10,700 evaluations (0.9 h on a real GEM); RL used 1,204 (0.1 h) and reached 54.9% of the exact optimum
+n= 50: exhaustive needs 20,875 evaluations (1.7 h on a real GEM); RL used 1,204 (0.1 h) and reached 84.5% of the exact optimum

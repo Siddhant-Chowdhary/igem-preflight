@@ -1,0 +1,113 @@
+# Our project, as a worked example.
+#
+# We are engineering S. cerevisiae toward a C14:0-rich fatty-acid profile for
+# a methyl myristate coolant. Every value here was checked against the real
+# Yeast9 model (yeast-GEM.xml, from SysBioChalmers/yeast-GEM) while we were
+# building this.
+#
+# To use this on something else: copy the file, change every value, leave the
+# preflight/ directory alone.
+
+name: igem-2026-methyl-myristate
+description: >
+  Knockout search and scoring checks for shifting S. cerevisiae fatty-acid
+  output toward a C14:0-rich target profile.
+
+# --- model ---
+model_path: yeast-GEM.xml
+
+biomass_reaction_id: r_2111
+# "growth". This is the model's own default objective, which is why we use it.
+#
+# We had an open question in the team about whether to use r_2111 or r_4041
+# ("biomass pseudoreaction"), because different scripts of ours used different
+# ones. We checked, and it turns out not to matter: the biomass metabolite
+# s_0450 is touched by exactly two reactions in Yeast9, r_4041 produces it and
+# r_2111 consumes it, and nothing else makes or uses it. At steady state that
+# forces flux through the two to be equal at every solution. We confirmed it:
+# constraining either to 50% of wild-type growth and then maximising C14:0
+# gives 0.119191 both ways.
+#
+# So both choices are correct and numbers from scripts using either are
+# directly comparable. We standardised on r_2111 because it is what the model
+# itself optimises by default.
+
+# --- candidate genes ---
+candidate_genes:
+  - POX1
+  - PXA1
+  - PXA2
+  - FAA1
+  - FAA4
+  - DGA1
+  - LRO1
+  - ARE1
+  - ARE2
+  - OLE1
+
+gene_to_model_id:     # common name -> Yeast9 systematic ORF ID, all verified
+  POX1: YGL205W
+  PXA1: YPL147W
+  PXA2: YKL188C
+  FAA1: YOR317W
+  FAA4: YMR246W
+  DGA1: YOR245C
+  LRO1: YNR008W
+  ARE1: YCR048W
+  ARE2: YNR019W
+  OLE1: YGL055W
+
+max_knockout_order: 3
+
+# --- target products ---
+# Only fatty acids whose exchange reaction we confirmed in the model are
+# listed. We left C16:1 out because its mapping was not confirmed, rather
+# than assume it.
+exchange_reactions:
+  "C14:0": r_2193
+  "C16:0": r_1993
+  "C18:0": r_2055
+  "C18:1": r_2189
+
+# --- combinations not worth running FBA on ---
+pre_fba_filters:
+  # FAA1 and FAA4 together with any third deletion is lethal.
+  - type: mutual_exclusion_at_order
+    genes: [FAA1, FAA4]
+    min_order: 3
+
+  # OLE1 is the only desaturase. Deleting it while the target still asks for
+  # C18:1 contradicts itself.
+  - type: conditional_exclusion
+    gene: OLE1
+    condition:
+      target_profile_key: "C18:1"
+      operator: ">"
+      value: 0
+
+  # Team decision: degradation-pathway knockouts should not reach the wet lab
+  # as a first-iteration proposal. They can be considered in later rounds once
+  # synthesis-side and storage-side options have been explored.
+  #
+  # Our later feasibility work gave this a stronger reason than scheduling: in
+  # this model, beta-oxidation is the ONLY route to C14:0, so deleting POX1
+  # takes production to exactly zero. See examples/run_feasibility.py.
+  #
+  # The gate defaults closed. To run a later-iteration search that may
+  # consider these genes, pass open_gates={"allow_degradation_knockouts"}
+  # explicitly rather than flipping the default here, so that anyone reusing
+  # this config still gets first-iteration behaviour.
+  - type: gated_subset
+    genes: [POX1, PXA1, PXA2]
+    gate_name: allow_degradation_knockouts
+    default: false
+
+# --- scoring ---
+ratio_match_alpha: 0.5           # stage 2 requires >= 50% of stage 1's max total
+hard_min_growth_fraction: 0.01   # floor only, to reject dead strains
+growth_penalty_K: 0.5            # growth deficit at which the penalty is half
+growth_penalty_n: 2.0            # Hill coefficient
+
+sources:
+  - "SysBioChalmers/yeast-GEM (Yeast9 genome-scale model)"
+  - "Our team's earlier dry-lab modules, for the gene list and filters"
